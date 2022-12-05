@@ -1,0 +1,34 @@
+
+<nav>
+    <div class="container">
+        <div class="row">
+            <% for (var i = 0; i < heros.length; i++) { %>
+                <table class="rounded-xl w-full text-sm text-left mb-2">
+                    <tr class="font-semibold grid grid-cols-1 list-inside text-gray-700">
+                        <!-- Appearance -->
+                        <ul class="grid grid-cols-4 gap-0 font-normal mb-2 ml-1  text-gray-700">
+                            <li>
+                            <p>  Gender: <span class="text-blue-600"> <%= heros[i].appearance.gender %></span></p>
+                            <p>Race: <span class="text-blue-600"> <%= heros[i].appearance.race %></span></p>
+                            <p>Height: <span class="text-blue-600"> <%= heros[i].appearance.height %></span></p>
+                        </li>
+                        <li>
+                            <p>Weight: <span class="text-blue-600"> <%= heros[i].appearance.weight %></span></p>
+                            <p>Eye Color: <span class="text-blue-600"> <%= heros[i].appearance.eyeColor %></span></p>
+                            <p>Hair Color: <span class="text-blue-600"> <%= heros[i].appearance.hairColor %></span></p>
+                        </li>
+                        <li>
+                            <p>Weight: <span class="text-blue-600"> <%= heros[i].work.occupation %></span></p>
+                        </li>
+                        <li>
+                            <p class="my-auto">Occupation: <span class="text-blue-600"> <%= heros[i].biography.publisher %></span></p>
+                        </li>
+                        </ul>
+                        </th>
+
+                    </tr>
+                </table>
+            <% } %>
+        </div>
+    </div>
+</nav>

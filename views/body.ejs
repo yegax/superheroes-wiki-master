@@ -1,0 +1,56 @@
+
+<!--SIDE BAR // MAIN CONTENT-->
+      <div class="container pb-1 mx-auto mt-4">
+        <!-- MAIN CONTENT-->
+        <div class="md:flex">
+          <div class="w-full mr-4 md:w-3/4">
+            <div class="py-2 border-b md:border md:rounded-lg md:px-8">
+              <div class="content flex py-1">
+                <img class="w-12 h-12 rounded-full object-cover object-top" src="<%= heros.images.xs %>"   alt="superhero profile image">
+                <div class="font-semibold text-4xl -my-1 ml-2 text-black"><%= heros.name %> <span class="font-light text-3xl my-2">(<%= heros.biography.fullName %>)</span></div>
+              </div>
+              <div class="font-light text-lg -my-1 ml-2 text-black">Hero ID: <i class="text-blue-600"><%= heros._id %></i>, Original ID: <i class="text-blue-600"><%= heros.original_id %></i></div>
+              <div class="my-2">
+                <hr>
+              </div>
+
+              <div class="ml-2">
+                <%- include('powerstats.ejs') %>
+                <div class="border-b mb-4 mt-4 -ml-3"></div>
+                <%- include('desc.ejs') %>
+                <div class="border-b mb-4 mt-4  -ml-3"></div>
+                <%- include('appearance.ejs') %>
+                <div class="border-b mb-4 mt-4  -ml-3"></div>
+                <%- include('work.ejs') %>
+                <div class="border-b mb-4 mt-4  -ml-3"></div>
+                <%- include('connections.ejs') %>
+                <div class="border-b mb-2 mt-4  "></div>
+                <%- include('timepost.ejs') %>
+              </div>
+
+            </div>
+
+            <%- include('comments.ejs') %>
+
+          </div>
+
+          
+<!--SIDE BAR // ABOUT-->
+          <div class="ml-4 md:w-1/4">
+            <div class="hidden md:block">
+              <img class="w-auto rounded-2xl" src="<%= heros.images.lg %>"   alt="superhero profile image">
+              <div class="">
+                <a class="flex items-center mb-2 mt-2 text-base font-semibold text-blue-600 hover:text-blue-400" href="<%= heros.images.lg %>">
+                  <svg class="w-4 h-4 mr-2 text-gray-700" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                  <u>Photo Gallery</u></a>
+              </div>
+                <%- include('biography.ejs') %>
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+

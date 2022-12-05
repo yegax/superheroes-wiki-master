@@ -1,0 +1,20 @@
+<div>
+    <div class="flex items-center pb-2 font-2xl leading-normal text-transparent">
+        <p class="font-bold text-blue-600">Biography:</p>
+    </div>
+    <div class="ml-3">
+     <p class="font-normal text-gray-800">
+        <span class="font-semibold"> <%= heros.biography.fullName %> </span> (simply known as <%= heros.name %>, 
+        <%= heros.biography.aliases%> or by its alter ego <%= heros.biography.alterEgos %>) is a fictional character
+        and superhero from <%= heros.biography.publisher%>, first appearing in <i><%= heros.biography.firstAppearance%>
+        </i>.
+     </p>
+     <p class="font-normal mt-2 text-gray-800">
+        Born in in <%= heros.biography.placeOfBirth%>, and part of the  <%= heros.appearance.race %> race, <%= heros.biography.fullName %>
+        is a member of the <%= heros.connections.groupAffiliation %> based in <%= heros.work.base %>.
+
+        <%= heros.name %>  is considered to have a <%= heros.biography.alignment %> character alignment as he performs his occupation(s)
+        as <%= heros.work.occupation %>.
+     </p>
+    </div>
+ </div>
